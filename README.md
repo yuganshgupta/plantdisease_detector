@@ -31,7 +31,7 @@ This dataset is recreated using offline augmentation from the original dataset. 
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/plant-disease-recognition.git
+    git clone https://github.com/yuganshgupta/plant-disease-recognition.git
     ```
 2. Navigate to the project directory:
     ```bash
