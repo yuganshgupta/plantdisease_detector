@@ -1,63 +1,180 @@
-# Plant Disease Recognition System
+# 🌱 Plant Disease Recognition System
 
-Welcome to the Plant Disease Recognition System! 🌿🔍
+An AI-powered web application for identifying plant diseases from leaf images using deep learning.
 
-Our goal is to assist in the swift identification of plant diseases. Simply upload an image of a plant, and our system will analyze it to detect any signs of disease. Let's work together to safeguard our crops and ensure a healthier harvest!
-
-## How It Works
-1. **Upload Image:** Navigate to the **Disease Detection** page and upload an image of a plant you suspect might be diseased.
-2. **Analysis:** Our system will use advanced algorithms to examine the image and identify potential diseases.
-3. **Results:** View the analysis results and get recommendations for further action.
-
-## Why Choose Us?
-- **Precision:** Our system employs cutting-edge machine learning techniques for precise disease detection.
-- **Ease of Use:** Designed with a simple and intuitive interface for a seamless user experience.
-- **Speed and Efficiency:** Get results in seconds, enabling quick decision-making.
-
-## Project Structure
-- `app.py`: Main application file containing the Streamlit app.
-- `trained_plant_disease_model.keras`: Pre-trained TensorFlow model for plant disease recognition.
-- `home_page.jpeg`: Image displayed on the home page.
-- `requirements.txt`: List of dependencies required to run the project.
-
-## Dataset
-This dataset is recreated using offline augmentation from the original dataset. The original dataset can be found on Kaggle. This dataset consists of about 87K RGB images of healthy and diseased crop leaves which is categorized into 38 different classes. The total dataset is divided into an 80/20 ratio of training and validation sets, preserving the directory structure. A new directory containing 33 test images is created later for prediction purposes.
-
-### Content
-1. `train` (70295 images)
-2. `test` (33 images)
-3. `validation` (17572 images)
-
-## Installation
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yuganshgupta/plant-disease-recognition.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd plant-disease-recognition
-    ```
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## Usage
-1. Run the Streamlit app:
-    ```bash
-    streamlit run app.py
-    ```
-2. Open your web browser and go to `http://localhost:8501`.
-
-## Contributing
-We welcome contributions! Please read our Contributing Guidelines for more details.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## About Us
-Discover more about our project, team, and objectives on the **About** page.
+The project enables users to upload an image of a plant leaf and receive an instant prediction along with information about the detected disease. It is designed to assist students, researchers, farmers, and developers interested in computer vision for agriculture.
 
 ---
 
-Feel free to reach out if you have any questions or need further assistance. Happy coding! 😊
+## ✨ Features
+
+- 🔍 Plant disease prediction from leaf images
+- 🌿 Supports **38 disease classes**
+- 📖 Disease information and recommendations
+- ⚡ Fast Streamlit-based web interface
+- 📊 Evaluation utilities for model benchmarking
+- 📁 Clean and modular project structure
+- 🔄 Easily extensible for future models
+
+---
+
+## 📂 Project Structure
+
+```text
+Plant-Disease-Recognition/
+│
+├── main.py                     # Streamlit application
+├── disease_info.py             # Disease descriptions
+├── requirements.txt
+├── environment.yml
+│
+├── evaluation/
+│   └── evaluate_metrics.py
+│
+├── models/
+│   ├── class_names.json
+│   ├── metrics.json
+│   ├── comparison.csv
+│   └── training_config.json
+│
+├── plant_disease.ipynb         # Training notebook
+├── plant_disease_test.ipynb    # Testing notebook
+│
+└── test/                       # Sample images
+```
+
+---
+
+## 🧠 Model
+
+The model is trained on the **PlantVillage** dataset containing approximately **87,000 RGB images** across **38 plant disease categories**.
+
+Dataset split:
+
+| Dataset | Images |
+|---------:|-------:|
+| Training | 70,295 |
+| Validation | 17,572 |
+| Test | 33 |
+
+The test folder included in this repository contains sample images that can be used to verify predictions without requiring users to collect their own images.
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yuganshgupta/plant-disease-recognition.git
+cd plant-disease-recognition
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+or create the Conda environment
+
+```bash
+conda env create -f environment.yml
+conda activate plant-disease
+```
+
+---
+
+## ▶️ Running the Application
+
+Start the Streamlit application
+
+```bash
+streamlit run main.py
+```
+
+Open your browser and navigate to
+
+```
+http://localhost:8501
+```
+
+---
+
+## 📊 Evaluation
+
+The repository includes an evaluation framework for comparing model performance and analyzing metrics.
+
+Evaluation resources include:
+
+- Performance metrics
+- Model comparison
+- Training configuration
+- Class mappings
+
+---
+
+## 🌿 Supported Crops
+
+The model recognizes diseases affecting crops including:
+
+- Apple
+- Blueberry
+- Cherry
+- Corn (Maize)
+- Grape
+- Orange
+- Peach
+- Pepper
+- Potato
+- Raspberry
+- Soybean
+- Squash
+- Strawberry
+- Tomato
+
+along with healthy plant classes.
+
+---
+
+## 🛣️ Roadmap
+
+Future improvements include:
+
+- PyTorch training pipeline
+- Transfer learning models
+- Additional CNN architectures
+- Improved evaluation metrics
+- Performance optimization
+- Enhanced explainability (Grad-CAM)
+- Mobile deployment
+
+---
+
+## 🤝 Contributing
+
+Contributions, feature requests, and suggestions are welcome.
+
+Feel free to fork the repository and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ⭐ Acknowledgements
+
+- PlantVillage Dataset
+- TensorFlow & Keras
+- Streamlit
+- OpenCV
+- NumPy
+- Pandas
+- Scikit-learn
+
+---
+
+If you find this project useful, consider giving it a ⭐ on GitHub!
