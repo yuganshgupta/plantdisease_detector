@@ -1,0 +1,52 @@
+name: plant-ai
+prefix: D:\CondaEnvs\plant-ai
+
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python
+  - python=3.11
+  - pip
+
+  # Jupyter
+  - jupyterlab
+  - notebook
+  - ipykernel
+
+  # Core Scientific Stack
+  - numpy=1.26.4
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - tqdm
+
+  # Deep Learning (GPU)
+  - pytorch>=2.5
+  - torchvision>=0.20
+  - torchaudio>=2.5
+  - pytorch-cuda=12.4
+
+  # Utilities
+  - joblib
+
+  - pip:
+      # Computer Vision
+      - opencv-python
+      - pillow
+      - albumentations
+
+      # Dashboard
+      - streamlit
+      - plotly
+
+      # Logging
+      - tensorboard
+
+      # Explainable AI
+      - grad-cam

@@ -1,0 +1,45 @@
+# Plant Disease Detection — Python 3.11 Dependencies
+# Install with: pip install -r requirements.txt
+#
+# For CUDA-enabled PyTorch, install PyTorch FIRST:
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+# Then:
+#   pip install -r requirements.txt
+
+# ── Deep Learning ──────────────────────────────────────────────────────
+torch>=2.5
+torchvision>=0.20
+torchaudio>=2.5
+
+# ── Computer Vision ────────────────────────────────────────────────────
+opencv-python
+pillow
+albumentations>=1.4
+
+# ── Classical ML ───────────────────────────────────────────────────────
+scikit-learn
+
+# ── Data & Visualization ──────────────────────────────────────────────
+numpy==1.26.4
+pandas
+matplotlib
+seaborn
+plotly>=5.20
+scipy
+
+# ── Explainability ────────────────────────────────────────────────────
+grad-cam>=1.5
+
+# ── Utilities ─────────────────────────────────────────────────────────
+joblib
+tqdm
+
+# ── TensorBoard ───────────────────────────────────────────────────────
+tensorboard>=2.16
+
+# ── Web UI ────────────────────────────────────────────────────────────
+streamlit>=1.35
+
+# ── Jupyter ───────────────────────────────────────────────────────────
+jupyter
+ipykernel

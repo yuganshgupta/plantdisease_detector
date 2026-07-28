@@ -1,0 +1,6 @@
+model,display_name,accuracy,total_params,model_size_mb,inference_ms,type,notes
+efficientnet_v2_s,EfficientNet-V2-S,0.9997154564079217,20226166,78.0,12,DL,Highest accuracy. Larger model.
+efficientnet_b0,EfficientNet-B0,0.9994878215342591,4056226,15.8,8,DL,Best accuracy-to-speed ratio. Recommended for production.
+convnext_tiny,ConvNeXt-Tiny,0.9994309128158434,27849350,106.3,11,DL,Modern pure-convolutional architecture.
+resnet50,ResNet-50,0.9992032779421808,23585894,90.3,10,DL,Classic deep residual network.
+custom_cnn,Custom CNN,0.9976098338265422,4857286,18.6,6,DL,Lightweight baseline trained from scratch.

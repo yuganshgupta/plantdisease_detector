@@ -1,0 +1,77 @@
+# ══════════════════════════════════════════════════════════════════════
+# Plant Disease Detection — .gitignore
+# ══════════════════════════════════════════════════════════════════════
+
+# ── Trained models (large binary files) ───────────────────────────────
+*.h5
+*.keras
+*.pth
+*.pkl
+models/*.pth
+models/*.pkl
+
+# ── Dataset (too large for version control) ───────────────────────────
+dataset/
+
+# ── TensorBoard logs & training runs ──────────────────────────────────
+logs/
+runs/
+
+# ── Local development-only files (not part of the project) ────────────
+build_notebook.py
+check_acc.py
+project_files.txt
+MEMORY.md
+HANDOFF.md
+
+# ── Archived / reference projects ─────────────────────────────────────
+goodoldproject/
+
+# ── Local experiments & scratch work ──────────────────────────────────
+scratch/
+
+# ── Generated notebooks ───────────────────────────────────────────────
+*_trained.ipynb
+*_fast_verify.ipynb
+*_executed.ipynb
+
+# ── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environments ──────────────────────────────────────────────
+.env/
+.venv/
+env/
+venv/
+ENV/
+
+# ── Jupyter ───────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Streamlit ─────────────────────────────────────────────────────────
+.streamlit/
+
+# ── IDEs ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Operating system files ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ── Temporary files ───────────────────────────────────────────────────
+*.tmp
+*.bak
+*.log
+*.orig
